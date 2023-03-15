@@ -5,7 +5,7 @@ use PDO;
 use PDOException;
 
 
-class ClientPDO
+class ClientPDO extends \PDO
 {
     private static $instance;
     private $pdo;

@@ -29,7 +29,6 @@ class PageController
     public function show($friendly)
     {
         $page = $this->page->getByFriendly($friendly);
-//        echo '<pre>'; print_r($page['title']); echo '</pre>';
 
         if (!$page) {
             http_response_code(404);
@@ -47,5 +46,6 @@ class PageController
         $content = ob_get_clean();
 
         include __DIR__ . '/../Views/templates/layout.php';
+        return $page;
     }
 }
