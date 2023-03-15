@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
     <title>Document Layout title: <?= $pageTitle ?></title>
-    <meta name="description" content="<?= $pageDescription ?>">
 </head>
 <body>
 
@@ -30,10 +29,6 @@
         </tr>
     </tbody>
 </table>
-
-
-
-
 
 </body>
 </html>
